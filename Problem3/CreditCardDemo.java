@@ -1,7 +1,10 @@
+// Test Script for CreditCard class
 package Problem3;
 
 public class CreditCardDemo {
-    public static void main(String[] args) {
+    public static void main(String[] args) { 
+
+        // Initialize variables
         final Money LIMIT = new Money(1000);
         final Money FIRST_AMOUNT = new Money(200);
         final Money SECOND_AMOUNT = new Money(10.02);
@@ -13,11 +16,13 @@ public class CreditCardDemo {
         
         CreditCard visa = new CreditCard(owner, LIMIT);
         
+        // Display the credit card information
         System.out.println(visa.getPersonals());
         System.out.println("Balance: " + visa.getBalance());
         System.out.println("Credit Limit: " + visa.getCreditLimit());
         System.out.println();
         
+        // Test charge and payment methods
         System.out.println("Attempt to charge " + FIRST_AMOUNT);
         visa.charge(FIRST_AMOUNT);
         System.out.println("Balance: " + visa.getBalance());
@@ -40,13 +45,5 @@ public class CreditCardDemo {
         visa.payment(FOURTH_AMOUNT);
         System.out.println("Balance: " + visa.getBalance());
         System.out.println("Credit Limit: " + visa.getCreditLimit());
-
-
-        // System.out.println("Attempt to charge " + FOURTH_AMOUNT);
-        // visa.charge(FOURTH_AMOUNT);
-        // System.out.println("Balance: " + visa.getBalance());
-        // System.out.println("Credit Limit: " + visa.getCreditLimit());
-
-        
     }
 }

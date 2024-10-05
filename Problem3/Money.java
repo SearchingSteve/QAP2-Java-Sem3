@@ -4,6 +4,7 @@ public class Money {
     private long dollars;
     private long cents;
 
+    // Constructor
     public Money(double amount) {
         if (amount < 0) {
             throw new IllegalArgumentException("Money amount cannot be negative");
@@ -12,11 +13,13 @@ public class Money {
         cents = Math.round((amount - dollars) * 100);
     }
 
+    // Copy Constructor
     public Money(Money otherObject){
         this.dollars = otherObject.dollars;
         this.cents = otherObject.cents;
     }
 
+    // Methods
     public Money add(Money otherAmount){
         return new Money(this.dollars + otherAmount.dollars + (this.cents + otherAmount.cents) / 100.0);
     }

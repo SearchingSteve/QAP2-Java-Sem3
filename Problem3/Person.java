@@ -5,6 +5,7 @@ public class Person {
     private String firstName;
     private Address home;
 
+    // Constructor
     public Person(String last, String first, Address residence){
         lastName = last;
         firstName = first;
