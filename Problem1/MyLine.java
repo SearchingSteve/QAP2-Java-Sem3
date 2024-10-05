@@ -1,3 +1,6 @@
+// MyLine is a class to create a line object with two points
+// and perform other operations.
+
 package Problem1; // Package declaration
 import Common.MyPoint; // Import the MyPoint class from the Common package
 

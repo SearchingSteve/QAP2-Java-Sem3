@@ -1,8 +1,9 @@
+// Test Script for MyLine class
+
 package Problem1;
 import java.util.Arrays;
 
 import Common.MyPoint;
-import Problem1.MyLine;
 
 
 
@@ -40,7 +41,7 @@ public class TestMyLine {
         System.out.println(l1);  
         
         // Test getLength()
-        System.out.printf("length is: %.2f <units>%n", l1.getLength());
+        System.out.printf("length is: %.2f units%n", l1.getLength());
         
         // Test getGradient()
       System.out.printf("Gradient is: %.2f radians%n", l1.getGradient());

@@ -49,11 +49,6 @@ public class MyPoint {
         this.y = y; // Update the y-coordinate
     }
 
-    // toString method to provide a string representation of the point
-    public String toString() {
-        return "(" + x + "," + y + ")"; // Return the coordinates in (x, y) format
-    }
-
     // Distance method 1: Calculate the distance to a point given by its coordinates
     public double distance(int x, int y) {
         // Calculate the distance using the distance formula
@@ -71,4 +66,13 @@ public class MyPoint {
         // Calculate the distance from the origin using the distance formula
         return Math.sqrt(Math.pow(this.x, 2) + Math.pow(this.y, 2));
     }
+//     @Override
+// public String toString() {
+//     return "(" + this.getX() + ", " + this.getY() + ")";
+// }
+   // toString method to provide a string representation of the point
+    public String toString() {
+        return "(" + x + "," + y + ")"; // Return the coordinates in (x, y) format
+    }
+
 }
